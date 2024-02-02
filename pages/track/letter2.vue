@@ -153,7 +153,7 @@ const rows = computed(() => {
 <template>
   
   <div >
-    <div class="title">ลูกหนี้งวดที่ 1</div>
+    <div class="title">ลูกหนี้งวดที่ 2</div>
     <div class="flex px-3 py-3.5 border-b border-gray-200 dark:border-gray-700">
       <UInput v-model="q" placeholder="ชื่อ-เลขที่สัญญา" class="custom-search"/>
     </div>

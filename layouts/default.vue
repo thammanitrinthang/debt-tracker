@@ -5,6 +5,9 @@
                 <img src="/image/logo-isuzu.png" alt="Logo" class="logo-image" />
 
                 <ul class="flex justify-center space-x-10">
+                    <a>
+                        <NuxtLink to="/">รายชื่อทั้งหมด</NuxtLink>
+                    </a>
                     <UDropdown :items="itemss" :popper="{ placement: 'bottom-start' }">
                         <a>
                             สถานะการติดตามหนี้
@@ -14,7 +17,7 @@
                         <NuxtLink to="/track/letter">ลูกหนี้งวดที่ 1</NuxtLink>
                     </a>
                     <a>
-                        <NuxtLink to="/">ลูกหนี้งวดที่ 2</NuxtLink>
+                        <NuxtLink to="/track/letter2">ลูกหนี้งวดที่ 2</NuxtLink>
                     </a>
                     <a>
                         <NuxtLink to="/">ลูกหนี้ NPL</NuxtLink>
@@ -27,6 +30,9 @@
                     </a>
                     <a>
                         <NuxtLink to="/">ลูกหนี้ปกติ</NuxtLink>
+                    </a>
+                    <a>
+                        <NuxtLink to="/">แบบฟอร์มส่งเอกสาร</NuxtLink>
                     </a>
                 </ul>
 
@@ -109,7 +115,7 @@ a:hover {
 nav {
     display: flex;
     align-items: center;
-    background-color: #A9C183;
+    background-color: #58A756;
     justify-content: space-between;
     color: #fff;
     padding: 10px;
