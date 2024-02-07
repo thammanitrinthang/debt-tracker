@@ -2,12 +2,11 @@
     <div>
         <header>
             <nav>
-                <img src="/image/logo-isuzu.png" alt="Logo" class="logo-image" />
+                <NuxtLink to="/">
+                <img src="/image/logo-isuzu.png" alt="Logo" class="logo-image" /></NuxtLink>
 
                 <ul class="flex justify-center space-x-10">
-                    <a>
-                        <NuxtLink to="/">รายชื่อทั้งหมด</NuxtLink>
-                    </a>
+                  
                     <UDropdown :items="itemss" :popper="{ placement: 'bottom-start' }">
                         <a>
                             สถานะการติดตามหนี้
@@ -97,8 +96,8 @@ const itemss = [
   
 <style scoped>
 a {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 15px;
+    
     color: white;
 }
 

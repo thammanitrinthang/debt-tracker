@@ -1,13 +1,14 @@
 <template>
+
     <v-row align="center" justify="center">
       <v-col cols="auto">
         <v-card
           class="mx-auto"
-          max-width="344"
-          title="Icons"
+          max-width="300"
+          title="ส่งจดหมายแล้ว"
           subtitle="prepend-icon and append-icon"
-          prepend-icon="mdi-account"
-          append-icon="mdi-check"
+      
+          append-icon="mdi-email"
         >
           <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</v-card-text>
         </v-card>
@@ -16,7 +17,7 @@
       <v-col cols="auto">
         <v-card
           class="mx-auto"
-          max-width="344"
+          max-width="300"
           title="Icons"
           subtitle="prepend and append"
         >
@@ -33,7 +34,7 @@
       <v-col cols="auto">
         <v-card
           class="mx-auto"
-          max-width="344"
+          max-width="300"
           title="Avatars"
           subtitle="prepend-avatar and append-avatar"
           prepend-avatar="https://cdn.vuetifyjs.com/images/logos/v-alt.svg"
@@ -46,7 +47,7 @@
       <v-col cols="auto">
         <v-card
           class="mx-auto"
-          max-width="344"
+          max-width="300"
           title="Avatars"
           subtitle="prepend and append"
         >
@@ -67,4 +68,4 @@
         </v-card>
       </v-col>
     </v-row>
-  </template>
+     </template>
