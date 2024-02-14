@@ -3,20 +3,21 @@
         <header>
             <nav>
                 <NuxtLink to="/">
-                <img src="/image/logo-isuzu.png" alt="Logo" class="logo-image" /></NuxtLink>
+                    <img src="/image/logo-isuzu.png" alt="Logo" class="logo-image" />
+                </NuxtLink>
 
                 <ul class="flex justify-center space-x-10">
-                  
-                    <UDropdown :items="itemss" :popper="{ placement: 'bottom-start' }">
+
+                    <UDropdown :items="itemss" :popper="{ placement: 'bottom-start' }" >
                         <a>
                             สถานะการติดตามหนี้
                         </a>
                     </UDropdown>
                     <a>
-                        <NuxtLink to="/track/letter">ลูกหนี้งวดที่ 1</NuxtLink>
+                        <NuxtLink to="/list/debtor1">ลูกหนี้งวดที่ 1</NuxtLink>
                     </a>
                     <a>
-                        <NuxtLink to="/track/letter2">ลูกหนี้งวดที่ 2</NuxtLink>
+                        <NuxtLink to="/list/debtor2">ลูกหนี้งวดที่ 2</NuxtLink>
                     </a>
                     <a>
                         <NuxtLink to="/">ลูกหนี้ NPL</NuxtLink>
@@ -87,8 +88,8 @@ const items = [
 ]
 const itemss = [
     [{ label: 'การส่งจดหมาย', to: '/track/letter', color: 'green' },
-    { label: 'การโทรติดตาม', to: '/', color: 'blue' },
-    { label: 'การส่ง Outsource', to: '/', color: 'orange' },
+    { label: 'การโทรติดตาม', to: '/track/callphone', color: 'blue' },
+    { label: 'การส่ง Outsource', to: '/track/outsource', color: 'orange' },
     { label: 'การส่งศาล', to: '/', color: 'red' },
     { label: 'รายชื่อการติดตามทั้งหมด', to: '/', color: 'purple' },]
 ]
@@ -97,7 +98,7 @@ const itemss = [
 <style scoped>
 a {
     font-size: 15px;
-    
+
     color: white;
 }
 
