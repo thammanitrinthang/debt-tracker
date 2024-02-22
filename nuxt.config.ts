@@ -1,6 +1,7 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 export default defineNuxtConfig({
   modules: [
+    '@nuxtjs/google-fonts',
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
         // @ts-expect-error
@@ -9,6 +10,11 @@ export default defineNuxtConfig({
     },'@nuxt/ui'
     //...
   ], 
+  googleFonts: {
+    families: {
+      Sarabun: true
+    },
+  },
   app: {
     head: {
       title:"Debt Tracker",

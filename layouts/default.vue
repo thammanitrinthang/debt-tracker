@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="font-family: 'Sarabun', sans-serif;" >
         <header>
             <nav>
                 <NuxtLink to="/">
