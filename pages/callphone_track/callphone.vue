@@ -16,7 +16,7 @@
           <td v-for="(value, key) in item" :key="key">
             <!-- Render a NuxtLink component for the "edit" column -->
             <template v-if="key === 'edit'">
-              <NuxtLink :to="'/list/debtor' + item.no"> <!-- Adjust the route as per your setup -->
+              <NuxtLink :to="'/callphone_track/debtcall' + item.no"> <!-- Adjust the route as per your setup -->
                 <v-icon>mdi-pencil</v-icon> <!-- Edit icon -->
               </NuxtLink>
             </template>
@@ -30,6 +30,7 @@
   </v-card>
 </template>
 <script>
+
 export default {
   data() {
     return {
@@ -84,6 +85,7 @@ export default {
         },
       ],
     }
+    
   },
 }
 </script>

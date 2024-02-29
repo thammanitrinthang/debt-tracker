@@ -27,7 +27,7 @@ export default {
       headers: [
         {
           align: 'start',
-          key: 'no',
+          key: 'id',
           sortable: true,
           title: 'ลำดับ',
         },
@@ -38,63 +38,63 @@ export default {
       ],
       desserts: [
         {
-          no: 1,
+          id: 1,
           contract: 12345678,
           name: 'นาย สบายใจ จัง',
           status: '',
           comments: '',
 
         }, {
-          no: 2,
+          id: 2,
           contract: 22345678,
           name: 'นาย สบายใจ จัง',
           status: '',
           comments: '',
 
         }, {
-          no: 3,
+          id: 3,
           contract: 32345678,
           name: 'นาย สบายใจ จัง',
           status: '',
           comments: '',
 
         }, {
-          no: 4,
+          id: 4,
           contract: 42345678,
           name: 'นาย สบายใจ จัง',
           status: '',
           comments: '',
 
         }, {
-          no: 5,
+          id: 5,
           contract: 52345678,
           name: 'นาย สบายใจ จัง',
           status: '',
           comments: '',
 
         }, {
-          no: 6,
+          id: 6,
           contract: 62345678,
           name: 'นาย หายใจ จัง',
           status: '',
           comments: '',
 
         }, {
-          no: 7,
+          id: 7,
           contract: 72345678,
           name: 'นาย สบายใจ จัง',
           status: '',
           comments: '',
 
         }, {
-          no: 8,
+          id: 8,
           contract: 82345678,
           name: 'นาย สบายใจ จัง',
           status: '',
           comments: '',
 
         }, {
-          no: 9,
+          id: 9,
           contract: 92345678,
           name: 'นาย สบายใจ จัง',
           status: '',

@@ -16,7 +16,7 @@
           <td v-for="(value, key) in item" :key="key">
             <!-- Render a NuxtLink component for the "edit" column -->
             <template v-if="key === 'edit'">
-              <NuxtLink :to="'/list/debtletter' + item.no"> <!-- Adjust the route as per your setup -->
+              <NuxtLink :to="'/letter_track/debtletter' + item.no"> <!-- Adjust the route as per your setup -->
                 <v-icon>mdi-pencil</v-icon> <!-- Edit icon -->
               </NuxtLink>
             </template>

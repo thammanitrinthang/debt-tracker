@@ -1,5 +1,5 @@
 <template>
-    <div style="font-family: 'Sarabun', sans-serif;" >
+    <div>
         <header>
             <nav>
                 <NuxtLink to="/">
@@ -14,22 +14,22 @@
                         </a>
                     </UDropdown>
                     <a>
-                        <NuxtLink to="/list/debtor1">ลูกหนี้งวดที่ 1</NuxtLink>
+                        <NuxtLink to="/list/debtorlate1">ลูกหนี้งวดที่ 1</NuxtLink>
                     </a>
                     <a>
-                        <NuxtLink to="/list/debtor2">ลูกหนี้งวดที่ 2</NuxtLink>
+                        <NuxtLink to="/list/debtorlate2">ลูกหนี้งวดที่ 2</NuxtLink>
                     </a>
                     <a>
-                        <NuxtLink to="/">ลูกหนี้ NPL</NuxtLink>
+                        <NuxtLink to="/list/debtornpl">ลูกหนี้ NPL</NuxtLink>
                     </a>
                     <a>
-                        <NuxtLink to="/">ลูกหนี้คาดว่าจะสูญหาย</NuxtLink>
+                        <NuxtLink to="/list/debtor_exlost">ลูกหนี้คาดว่าจะสูญหาย</NuxtLink>
                     </a>
                     <a>
-                        <NuxtLink to="/">ลูกหนี้สูญหาย</NuxtLink>
+                        <NuxtLink to="/list/debtorlost">ลูกหนี้สูญหาย</NuxtLink>
                     </a>
                     <a>
-                        <NuxtLink to="/">ลูกหนี้ปกติ</NuxtLink>
+                        <NuxtLink to="/debtornormal/">ลูกหนี้ปกติ</NuxtLink>
                     </a>
                     <a>
                         <NuxtLink to="/">แบบฟอร์มส่งเอกสาร</NuxtLink>
@@ -75,7 +75,10 @@
     </div>
 </template>
   
-<script setup>
+<script>
+export default{
+    name:'DefaultLayout'
+};
 const items = [
     [{
         label: 'Thammanit Rinthang',
@@ -87,8 +90,8 @@ const items = [
     }]
 ]
 const itemss = [
-    [{ label: 'การส่งจดหมาย', to: '/track/letter', color: 'green' },
-    { label: 'การโทรติดตาม', to: '/track/callphone', color: 'blue' },
+    [{ label: 'การส่งจดหมาย', to: '/letter_track/letter', color: 'green' },
+    { label: 'การโทรติดตาม', to: '/callphone_track/callphone', color: 'blue' },
     { label: 'การส่ง Outsource', to: '/track/outsource', color: 'orange' },
     { label: 'การส่งศาล', to: '/', color: 'red' },
     { label: 'รายชื่อการติดตามทั้งหมด', to: '/', color: 'purple' },]
@@ -97,7 +100,7 @@ const itemss = [
   
 <style scoped>
 a {
-    font-size: 15px;
+    font-size: 17px;
 
     color: white;
 }

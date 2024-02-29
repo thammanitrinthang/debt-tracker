@@ -9,7 +9,7 @@
                     <v-text class="text-center text-h6">ส่งจดหมายติดตาม</v-text>
                 </template>
                 <template v-slot:append>
-                    <NuxtLink to="/track/letter">
+                    <NuxtLink to="/letter_track/letter">
                         <div class="text-end">
                             <v-btn class="text-none" color="#398837" rounded variant="flat" width="80" height="35">
                                 รายชื่อ
@@ -26,7 +26,7 @@
                     <v-text class="text-center text-h6">โทรติดตาม</v-text>
                 </template>
                 <template v-slot:append>
-                    <NuxtLink to="/track/callphone">
+                    <NuxtLink to="/callphone_track/callphone">
                         <div class="text-end">
                             <v-btn class="text-none" color="#398837" rounded variant="flat" width="80" height="35">
                                 รายชื่อ

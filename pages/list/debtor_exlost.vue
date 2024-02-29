@@ -1,7 +1,7 @@
 <template>
     <v-card flat>
       <template v-slot:title>
-        <div class="mx-right text-h3" style="font-size: 30px; padding: 16px;">ลูกหนี้สูญหาย</div>
+        <div class="mx-right text-h3" style="font-size: 30px; padding: 16px;">ลูกหนี้คาดว่าจะสูญหาย</div>
       </template>
       <template v-slot:text class="text-right">
         <v-responsive class="mx-right" max-width="344">
